@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header">Creation Todo Prof</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="date">date</label>
+      <input id="date" type="text" class="form-control" [(ngModel)]="todo.date" >
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input id="description" type="text" class="form-control" [(ngModel)]="todo.description" >
+    </div>
+    <div class="form-group">
+      <label for="isDone">IsDone</label>
+      <input id="isDone" type="text" class="form-control" [(ngModel)]="todo.isDone" >
+    </div>
+    <div class="form-group">
+      <label for="task">Task</label>
+      <input id="task" type="text" class="form-control" [(ngModel)]="todo.task" >
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()" >Valider</button>
+  </div>
+</div>

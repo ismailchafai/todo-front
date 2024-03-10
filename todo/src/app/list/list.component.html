@@ -1,0 +1,27 @@
+<p>list-all works!</p>
+<div>
+  <table class="table">
+  <thead>
+  <tr>
+    <th>date</th>
+    <th>task</th>
+    <th>description</th>
+    <th>isDone</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+    @for (item of todos; track item.id) {
+      <tr>
+        <td>{{ item.date}}</td>
+        <td>{{ item.task}}</td>
+        <td>{{ item.description}}</td>
+        <td>{{ item.isDone}}</td>
+        <td><span (click)="deleteById(item , item.id)" class="btn btn-sm btn-danger">claire</span></td>
+        <td><span (click)="update()" class="btn btn-sm btn-primary">Update</span></td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+</div>
